@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  public mensaje="mensaje1";
+
+
      saludo (){
         alert("Hola mi Gente");
     }
