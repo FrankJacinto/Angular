@@ -1,16 +1,6 @@
 <header class="header">
       <h1>Bienvenido GeekTic Soluciones</h1>
 </header>
-
-<div>
-  <h1>Hola buenas tardes</h1>
-    <h1>{{mensaje}}</h1>
-    <h2>{{empresa}}</h2>
-  <p> Hoy empezamos</p>
-</div>
-<form >
-    <input type="text" [(ngModel)]="mensaje" name="mensaje">
-    <input type="text" name="empresa" [(ngModel)]="empresa">
-    <button (click)="saludo()"> Dame Click</button>
-</form>
+{{ser2.obtenermensaje()}}
+<router-outlet> </router-outlet>
 <footer class="footer"> <p>Derechos Reservados 2018</p> </footer>

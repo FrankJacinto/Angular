@@ -1,3 +1,20 @@
-<p>
-  componente2 works!
-</p>
+<div>
+  <h1>Hola buenas tardes</h1>
+  <h1>{{mensaje}}</h1>
+  <h2>{{empresa}}</h2>
+  <p> Hoy empezamos</p>
+</div>
+<form >
+  <input type="text" [(ngModel)]="mensaje" name="mensaje">
+  <input type="text" name="empresa" [(ngModel)]="empresa">
+  <button (click)="saludo()"> Dame Click</button>
+</form>
+
+<h3 *ngIf="mostrarretro!=true"> El mejor juego es...: {{mejorjuegoretro}}</h3>
+<h3 [style.background]="color" *ngIf="mostrarretro"> El mejor juego retro es: {{juegoretro}}</h3>
+<h1>{{mejorjuegoretro}}</h1>
+
+<p>Listado de Carreras: </p>
+<ul>
+  <li *ngFor="let carrera of carreras">{{carrera}}</li>
+</ul>
